@@ -1,0 +1,16 @@
+.example-card {
+    max-width: 100%;
+}
+
+.example-header-image {
+    background-size: cover;
+}
+
+.mat-card-image {
+    height: 500px !important;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}

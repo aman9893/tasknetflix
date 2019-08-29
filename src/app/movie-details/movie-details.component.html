@@ -1,0 +1,31 @@
+<mat-card *ngIf="detailsData" class="example-card">
+    <div class="close" (click)="close()">
+        <mat-icon> close</mat-icon>
+    </div>
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Actors-{{detailsData.Title}}</mat-card-title>
+        <mat-card-subtitle>{{detailsData.Year}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{detailsData.Poster}}" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <p>
+            Writer- {{detailsData.Writer}}
+        </p>
+        <br>
+        <p> Country - {{detailsData.Country}}</p>
+        <p> BoxOffice - {{detailsData.BoxOffice}}</p>
+        <p> DVD - {{detailsData.DVD}}</p>
+        <p> Director - {{detailsData.Director}}</p>
+        <p> Genre - {{detailsData.Genre}}</p>
+        <p> Language - {{detailsData.Language}}</p>
+        <p> Production - {{detailsData.Production}}</p>
+        <p> Website - {{detailsData.Website}}</p>
+
+
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary">Imdb Rating -{{detailsData.imdbRating}}</button>
+        <button mat-raised-button color="warn">Imdb Votes {{detailsData.imdbVotes}}</button>
+    </mat-card-actions>
+</mat-card>
